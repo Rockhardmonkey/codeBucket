@@ -1,0 +1,6 @@
+[BRANCH]
+2,Head First Java,Kathy Sierra,9781491910771,756
+1,The Stranger,Albert Camus,9780679720201,144
+4,IT,Stephen King,9780790736037,1168
+[CHECKOUT]
+3,Dungeon Crawler Carl,Matt Dinniman,9798217287161,466

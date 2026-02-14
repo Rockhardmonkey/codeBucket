@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_system.PrimaryController" spacing="10.0">
+   <children>
+      <FlowPane fx:id="rootPane" alignment="CENTER" hgap="20.0" vgap="20.0" prefWrapLength="320.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="addBookButton" text="1. Add Book" onAction="#handleAddBook" maxWidth="Infinity" />
+            <Button fx:id="borrowBookButton" text="2. Borrow Book" onAction="#handleBorrowBook" maxWidth="Infinity" />
+            <Button fx:id="returnBookButton" text="3. Return Book" onAction="#handleReturnBook" maxWidth="Infinity" />
+            <Button fx:id="searchByTitleButton" text="4. Search by Title" onAction="#handleSearchByTitle" maxWidth="Infinity" />
+            <Button fx:id="printAllBooksButton" text="5. Print All Books" onAction="#handlePrintAllBooks" maxWidth="Infinity" />
+            <Button fx:id="exitButton" text="6. Exit" onAction="#handleExit" maxWidth="Infinity" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </FlowPane>
+      <TextArea fx:id="outputArea" editable="false" wrapText="true" VBox.vgrow="ALWAYS" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

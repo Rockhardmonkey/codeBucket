@@ -1,0 +1,3 @@
+Account Type: Checking, Account ID: 1, Name: Kris Summers, Balance: $97.0, Interest Rate: 0.02%
+
+Account Type: Checking, Account ID: 2, Name: Scruffy Testerson, Balance: $4.0, Interest Rate: 0.04%

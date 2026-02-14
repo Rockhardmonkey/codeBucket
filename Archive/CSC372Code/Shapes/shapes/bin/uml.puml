@@ -1,0 +1,44 @@
+@startuml
+abstract class Shape {
+  +double surface_area()
+  +double volume()
+}
+
+class Sphere {
+  -double radius
+  +Sphere(double radius)
+  +double surface_area()
+  +double volume()
+  +String toString()
+}
+
+class Cylinder {
+  -double radius
+  -double height
+  +Cylinder(double radius, double height)
+  +double surface_area()
+  +double volume()
+  +String toString()
+}
+
+class Cone {
+  -double radius
+  -double height
+  +Cone(double radius, double height)
+  +double surface_area()
+  +double volume()
+  +String toString()
+}
+
+class shapeArray {
+  +void main(String[] args)
+}
+
+Shape <|-- Sphere
+Shape <|-- Cylinder
+Shape <|-- Cone
+shapeArray ..> Shape : uses (array of)
+shapeArray ..> Sphere : instantiates
+shapeArray ..> Cylinder : instantiates
+shapeArray ..> Cone : instantiates
+@enduml
